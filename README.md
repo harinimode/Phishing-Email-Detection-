@@ -17,8 +17,7 @@ PHISHING/
 └── model/                   # Folder containing saved .pkl model files
     └── phishing_model.pkl
 ```
-Features
-
+**Features**
 Preprocessing and TF-IDF vectorization of email text
 
 Machine learning classifier: Logistic Regression
@@ -29,7 +28,7 @@ Final script (new_finalll.py) integrates ML prediction with VirusTotal API check
 
 Model persistence in model/ as .pkl files for easy reuse
 
-Quick usage
+**Quick usage**
 
 Install dependencies (example):
 ```
@@ -38,8 +37,24 @@ pip install -r requirements.txt
 pip install scikit-learn pandas numpy joblib requests
 
 ```
+Train the model:
+```
+python train_model.py
+# saves model to model/phishing_model.pkl
 
-⚙️ Features
+```
+Test the model on new samples:
+```
+python testing_model.py
+# saves model to model/phishing_model.pkl
+```
+Run final combined flow (ML + VirusTotal):
+```
+python new_finalll.py
+# make sure to set your VirusTotal API key in the script or via env var
+
+```
+⚙️ **Features**
 Machine Learning Model (Logistic Regression + TF-IDF)
 
 Suspicious URL Detection using:
@@ -52,7 +67,7 @@ Interactive CLI to test emails in real-time
 
 High Accuracy (~97% on sample dataset)
 
-📊 Dataset
+📊 **Dataset**
 The dataset (Phishing_Email.csv) contains:
 
 Email Text → Email body/content
@@ -61,7 +76,7 @@ Label → Phishing or Safe
 
 This dataset is from Kaggle and has been preprocessed for training.
 
-🚀 Installation & Setup
+🚀 **Installation & Setup**
 1️⃣ Clone the Repository
 
 git clone https://github.com/yourusername/phishing-email-detector.git
@@ -108,7 +123,7 @@ Check them via VirusTotal API.
 
 Return results + list of found URLs.
 
-📈 Sample Output
+📈 **Sample Output**
 markdown
 
 
@@ -116,7 +131,7 @@ markdown
 🔗 URLs Found:
    - http://fakebank-login.com
 ----------------------------------------
-🧠 Model Details
+🧠** Model Details**
 Vectorization: TF-IDF
 
 Classifier: Logistic Regression
@@ -129,7 +144,7 @@ F1 Score: ~97%
 
 ROC AUC: ~0.98
 
-📌 Future Improvements
+📌** Future Improvements**
 Add GUI (Streamlit/Tkinter) for easier use.
 
 Batch process multiple emails at once.
