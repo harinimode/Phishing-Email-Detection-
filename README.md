@@ -12,12 +12,13 @@ bash
 Copy
 Edit
 PHISHING/
-│
 ├── Phishing_Email.csv        # Dataset (email text + labels)
-├── train_model.py            # Train the ML model and save it
-├── testing_model.py          # Test the trained model on new samples
-├── new_finalll.py            # Final script combining ML + VirusTotal API
-└── model/                    # Folder containing saved .pkl model files
+├── train_model.py           # Train the ML model and save it
+├── testing_model.py         # Test the trained model on new samples
+├── new_finalll.py           # Final script combining ML + VirusTotal API
+└── model/                   # Folder containing saved .pkl model files
+    └── phishing_model.pkl
+
 ⚙️ Features
 Machine Learning Model (Logistic Regression + TF-IDF)
 
