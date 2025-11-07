@@ -8,9 +8,7 @@ ML-based detection for suspicious language patterns.
 URL-based detection for malicious or suspicious links.
 
 🗂 Project Structure
-bash
-Copy
-Edit
+```
 PHISHING/
 ├── Phishing_Email.csv        # Dataset (email text + labels)
 ├── train_model.py           # Train the ML model and save it
@@ -18,7 +16,7 @@ PHISHING/
 ├── new_finalll.py           # Final script combining ML + VirusTotal API
 └── model/                   # Folder containing saved .pkl model files
     └── phishing_model.pkl
-
+```
 ⚙️ Features
 Machine Learning Model (Logistic Regression + TF-IDF)
 
