@@ -17,6 +17,28 @@ PHISHING/
 └── model/                   # Folder containing saved .pkl model files
     └── phishing_model.pkl
 ```
+Features
+
+Preprocessing and TF-IDF vectorization of email text
+
+Machine learning classifier: Logistic Regression
+
+Train / test scripts separated for clarity
+
+Final script (new_finalll.py) integrates ML prediction with VirusTotal API checks (URL/attachment reputation)
+
+Model persistence in model/ as .pkl files for easy reuse
+
+Quick usage
+
+Install dependencies (example):
+```
+pip install -r requirements.txt
+# or
+pip install scikit-learn pandas numpy joblib requests
+
+```
+
 ⚙️ Features
 Machine Learning Model (Logistic Regression + TF-IDF)
 
