@@ -3,7 +3,7 @@ import re
 import requests
 
 # ✅ Hardcoded Google API Key (use with caution)
-API_KEY = "AIzaSyCOk0o1_VxTEI_Ob1varuoB-XeJ6XL7DCQ"
+API_KEY = ""
 
 # Load model and label binarizer
 model = joblib.load('model/phishing_model.pkl')
@@ -162,4 +162,5 @@ if __name__ == "__main__":
         else:
             print("🔗 No URLs found.")
         print("-" * 40)
+
 '''
